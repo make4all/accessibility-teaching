@@ -7,8 +7,8 @@ title: Accessibility Classes Content
 tagline: All the content you need to start an accessibility class
 description: Learn about app accessibility; how accessibility can be incorporated into cutting edge computer science topics like machine learning and fabrication; and the interaction of accessibilty technology and society
 author: J. Mankoff
-baseurl: '/just-the-class' # the subpath of your site, e.g. /blog
-url: 'https://kevinl.info' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '/accessibility-teaching' # the subpath of your site, e.g. /blog
+url: 'https://make4all.github.io/' # the base hostname & protocol for your site, e.g. http://example.com
 staff_email: uaccess@cs.washington.edu
 canvas_course: XXXX
 git_branch: NAME-YYqq
