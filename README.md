@@ -1,16 +1,16 @@
 ---
 layout: home
-title: Just the Class
+title: Accessibility Class, based on Just the Class
 nav_exclude: true
 permalink: /:path/
 seo:
   type: Course
-  name: Just the Class
+  name: Accessibility Class, based on Just the Class
 ---
 
-# Just the Class
+# Accessibility Class
 
-Just the Class is a GitHub Pages template developed for the purpose of quickly deploying course websites. In addition to serving plain web pages and files, it provides a boilerplate for:
+Accessibility Class is content and a structure based on Just the Class, which is a GitHub Pages template developed for the purpose of quickly deploying course websites. In addition to serving plain web pages and files, it provides a boilerplate for:
 
 - [announcements](announcements.md),
 - a [course calendar](calendar.md),
@@ -37,3 +37,21 @@ Just the Class has been used by instructors at Stanford University ([CS 161](htt
 ### Local development environment
 
 Just the Class requires no special Jekyll plugins and can run on GitHub Pages' standard Jekyll compiler. To setup a local development environment, clone your template repository and follow the GitHub Docs on [Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
+
+Just the Class does not work with custom plugins
+
+If you have any trouble installing Ruby or Jekyll on a Mac, there are great resources at [Ruby on Mac](https://www.rubyonmac.dev/blog/)
+
+# Todos
+
+Consider adding to Reveal: 
+- [Railroad](https://github.com/edc4it/reveal.js-railroad); 
+- [Onetimer](https://github.com/tpoindex/reveal-onetimer) for fragments 
+- [Questions](https://github.com/rajgoel/reveal.js-plugins/tree/master/questions)
+- [Poll](https://github.com/rajgoel/reveal.js-plugins/tree/master/poll)
+- [Seminar](https://github.com/rajgoel/reveal.js-plugins/tree/master/seminar); 
+- [Fullscreen](https://github.com/rajgoel/reveal.js-plugins/tree/master/fullscreen)
+- [Chalkboard](https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard)
+- [Anything](https://github.com/rajgoel/reveal.js-plugins/tree/master/anything)
+
+Consider adding support for generating things using pandoc and so on in cli e.g. [this reveal advice](https://gist.github.com/jonashackt/85f9df62986db4e70396e3c494e26b76) or what's [recommended here](https://sfarrens.github.io/presentations/#/) about scientific computing

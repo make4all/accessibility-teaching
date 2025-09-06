@@ -1,24 +1,28 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole site, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Just the Class
-tagline: A Jekyll template for course websites
-description: A modern, highly customizable, responsive Jekyll template for course websites
-author: Kevin Lin
-baseurl: '/just-the-class' # the subpath of your site, e.g. /blog
-url: 'https://kevinl.info' # the base hostname & protocol for your site, e.g. http://example.com
+title: Accessibility Classes Content
+tagline: All the content you need to start an accessibility class
+description: Learn about app accessibility; how accessibility can be incorporated into cutting edge computer science topics like machine learning and fabrication; and the interaction of accessibilty technology and society
+author: J. Mankoff
+baseurl: '/cseXXX/YYqq' # the subpath of your site, e.g. /blog
+url: 'https://courses.cs.washington.edu' # the base hostname & protocol for your site, e.g. http://example.com
+staff_email: uaccess@cs.washington.edu
+canvas_course: XXXX
+git_branch: NAME-YYqq
+discussion: https://edstem.org/us/courses/xxxx/discussion
+canvas: https://canvas.uw.edu/courses/zzzz
+submit: https://canvas.uw.edu/courses/zzzz/assignments/
+outcomes: https://canvas.uw.edu/courses/zzz/outcomes/
+room: BLD ###
+classtime: DDD TT:tt-TT:tt AM|PM
+classnum: CSEXXX
+quarter: "Quarter YYYY"
+closed:
+warning:
+copydate: "9/4/25"
 exclude: [
 	 "Gemfile",
 	 "Gemfile.lock",
@@ -44,11 +48,24 @@ search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links:
-  Kevin Lin:
-    - 'https://kevinl.info'
-  Just the Class on GitHub:
+  J. Mankoff:
+    - 'https://make4all.org/jennifer-mankoff/'
+  JtC (GitHub):
     - 'https://github.com/kevinlin1/just-the-class'
-footer_content:
+aux_links_new_tab: true
+footer_content: The University of Washington acknowledges the Coast Salish peoples of this land, the land which touches the shared waters of all tribes and bands within the Suquamish, Tulalip and Muckleshoot nations.  This site is maintained by J. Mankoff. 
+last_modified_date: July 31, 2025
+last_edit_timestamp: true # show or hide - page must have a 'last_modified_date' defined in the frontmatter
+mermaid:
+  version: "9.1.3"
+back_to_top: true
+back_to_top_text: "Back to top"
+logo: "/assets/images/favicon.png"
+git_username: jmankoff
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/make4all/accessibility-classes" # the github URL for your repo
+gh_edit_branch: "UACCESS-YYqq" # the branch that your docs is served from
 
 # Collections for website data
 collections:
@@ -59,7 +76,17 @@ collections:
   revealjs:
      search_exclude: true
      nav_exclude: true
- 
+  syllabus:
+     nav_exclude: true
+  slides:
+    nav_exclude: true
+  modules_quals:
+    nav_exclude: true
+  modules_ugrad:
+    nav_exclude: true
+  modules_capstone:
+    nav_exclude: true
+    
 # Default layouts for each collection type
 defaults:
   - scope:
@@ -85,6 +112,12 @@ defaults:
       type: announcements
     values:
       layout: announcement
+  - scope:
+      path: ''
+      type: syllabus
+    values:
+      layout: syllabus
+      subpath: '/assets/imagse/'
 
 compress_html:
   clippings: all
@@ -98,7 +131,16 @@ liquid:
   error_mode: strict
   strict_filters: true
 
-markdown_slide_separator: ---
+toc:
+  min_level: 1
+  max_level: 2
+
+font-awesome:
+  assets: true
+
+# Custom vars
+version:             1.1.0
+
 permalink: "/:title"
 slideNumber:
   # Slide number formatting can be configured using these variables:
@@ -118,8 +160,8 @@ reveal:
   ## The "normal" size of the presentation, aspect ratio will be preserved
   ## when the presentation is scaled to fit different resolutions. Can be
   ## specified using percentage units.
-  width: 1200
-  height: 960
+  width: 768
+  height: 560
   ## Factor of the display size that should remain empty around the content
   margin: 0.1
   ## Bounds for smallest/largest possible scale to apply to content
@@ -128,9 +170,9 @@ reveal:
   ## Add the current slide number to the URL hash so that reloading the
   ## page/copying the URL will return you to the same slide (true | _false_)
   hash: true ## must be true or fragments break
+  
   ## Push each slide change to the browser history.  Implies `hash: true` (true | _false_)
   ## history: false
-
 
   ## Display presentation control arrows
   ## Show controls? (_true_ | false)  default values for all settings shown as _val_
@@ -143,10 +185,33 @@ reveal:
   ## Disables the default revealjs slide layout (scaling and centering)
   ## so that you can use custom CSS layout (true | _false_)
   ## disableLayout: false
+  ## disables just centering
+  center: false
+
+  mermaid:
+    theme: dark
+
+  incremental: false
+  preview-links: auto
+  slide-tone: false
+  progress: true
+  history: false
+  chalkboard:
+    buttons: false
+    theme: whiteboard
+  multiplex: false
+  ## none/fade/slide/convex/concave/zoom
+  transition: "none"	
+  title-slide-attributes:
+    data-background-image: "/assets/images/people.png"
+    data-background-position: right
+    data-background-size: contain
+    data-background-opacity: "0.5"
 
   ## The maximum number of pages a single slide can expand onto when printing
   ## to PDF, unlimited by default (Number.POSITIVE_INFINITY)
   ## pdfMaxPagesPerSlide: 100
 
-  
+  markdown: 
+     smartypants: true
 
