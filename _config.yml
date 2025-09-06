@@ -3,12 +3,26 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Just the Class
-tagline: A Jekyll template for course websites
-description: A modern, highly customizable, responsive Jekyll template for course websites
-author: Kevin Lin
-baseurl: '/just-the-class' # the subpath of your site, e.g. /blog
-url: 'https://kevinl.info' # the base hostname & protocol for your site, e.g. http://example.com
+title: Accessibility Classes Content
+tagline: All the content you need to start an accessibility class
+description: Learn about app accessibility; how accessibility can be incorporated into cutting edge computer science topics like machine learning and fabrication; and the interaction of accessibilty technology and society
+author: J. Mankoff
+baseurl: '/cseXXX/YYqq' # the subpath of your site, e.g. /blog
+url: 'https://courses.cs.washington.edu' # the base hostname & protocol for your site, e.g. http://example.com
+staff_email: uaccess@cs.washington.edu
+canvas_course: XXXX
+git_branch: NAME-YYqq
+discussion: https://edstem.org/us/courses/xxxx/discussion
+canvas: https://canvas.uw.edu/courses/zzzz
+submit: https://canvas.uw.edu/courses/zzzz/assignments/
+outcomes: https://canvas.uw.edu/courses/zzz/outcomes/
+room: BLD ###
+classtime: DDD TT:tt-TT:tt AM|PM
+classnum: CSEXXX
+quarter: "Quarter YYYY"
+closed:
+warning:
+copydate: "9/4/25"
 exclude: [
 	 "Gemfile",
 	 "Gemfile.lock",
